@@ -22,7 +22,7 @@ void jump(vector<int>& arr,int key)
             return;
         }
     }
-    cout<<key <<" is not present\n";
+    cout<< key <<" is not present\n";
     cout<<"Total comparisons = "<<comp;
 
 }

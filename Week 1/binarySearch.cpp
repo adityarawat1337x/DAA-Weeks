@@ -20,7 +20,7 @@ void binarySearch(vector<int> &arr, int key)
             l=mid+1;
         else r=mid-1;
     }
-    cout<<key <<" is not present\n";
+    cout<< key <<" is not present\n";
     cout<<"Total comparisons = "<<comp;
 }
 
