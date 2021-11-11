@@ -48,14 +48,22 @@ bool comp(node a,node b){
 
 int main()
 {
-    int n, e;
-    cin >> n >> e;
+    int n,e;
+    cout << "Enter num of cities";
+    cin >> n;
+    int  c;
+    cout << "\nEnter roads matrix with cost:\n";
     vector<node> edges;
     makeSet(n);
-    while(e--){
-        int a, b,c;
-        cin >> a >> b>>c;
-        edges.push_back(node(a, b,c));
+
+    for (int i = 0; i < n; i++)
+    for (int j = 0;j < n;j++)
+    {
+        cin >> c;
+        if(c!=0){
+            edges.push_back(node(i, j, c));
+            cout << i << j << c << endl;
+        }
     }
 
     sort(edges.begin(), edges.end(), comp);

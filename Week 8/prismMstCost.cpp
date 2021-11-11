@@ -4,11 +4,9 @@ using namespace std;
 
 int main()
 {
-    int N,e;
+    int N;
     cout << "Enter num of cities";
     cin >> N;
-    cout << "\nEnter num of roads";
-    cin >> e;
     int  c;
     vector<vector<int>> graph(N,vector<int>(N,INT_MAX));
     cout << "\nEnter roads matrix with cost:\n";
