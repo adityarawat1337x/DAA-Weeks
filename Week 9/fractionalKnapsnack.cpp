@@ -2,12 +2,12 @@
 
 using namespace std;
 
-
 bool comp(pair<double,double> p1,pair<double,double> p2){
     double valbywt1 = (double)p1.second / (double)p1.first;
     double valbywt2 = (double)p2.second / (double)p2.first;
     return valbywt1 > valbywt2;
 }
+
 int main()
 {
     int n,w;
