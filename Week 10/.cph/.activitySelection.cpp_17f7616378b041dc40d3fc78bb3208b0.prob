@@ -1,1 +1,0 @@
-{"name":"Local: activitySelection","url":"/study/DAA TUTORIAL SHEETS/DAA-Weeks/Week 10/activitySelection.cpp","tests":[{"id":1636742794941,"input":"10\n1 3 0 5 3 5 8 8 2 12\n4 5 6 7 9 9 11 12 14 16","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/study/DAA TUTORIAL SHEETS/DAA-Weeks/Week 10/activitySelection.cpp","group":"local","local":true}
