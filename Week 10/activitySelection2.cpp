@@ -2,15 +2,15 @@
 
 using namespace std;
 
+bool comp(logs a,logs b){
+    return a.deadline < b.deadline;
+}
+
 struct logs{
     int time;
     int deadline;
     int index;
 };
-
-bool comp(logs a,logs b){
-    return a.deadline < b.deadline;
-}
 
 int main()
 {
@@ -45,5 +45,5 @@ int main()
     for (auto it : act){
         cout << it << ", ";
     }
-        return 0;
+    return 0;
 }
