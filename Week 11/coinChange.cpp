@@ -31,6 +31,6 @@ int main()
     cin >> target;
     sort(arr.begin(), arr.end());
     vector<vector<int>> dp(n + 1, vector<int>(target + 1, 0));
-    cout << ways(arr, 0, target, dp);
+    cout << ways(arr, 0, target, dp)<<" ways.";
     return 0;
 }
