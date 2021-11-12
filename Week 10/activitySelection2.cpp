@@ -3,13 +3,13 @@
 using namespace std;
 
 struct logs{
-    int start;
-    int end;
+    int time;
+    int deadline;
     int index;
 };
 
 bool comp(logs a,logs b){
-    return a.end < b.end;
+    return a.deadline < b.deadline;
 }
 
 int main()
@@ -19,27 +19,25 @@ int main()
     vector<logs> activity(n);
 
     for (int i = 0; i < n; i++){
-        cin >> activity[i].start;
-        activity[i].index = i + 1;
+        cin >> activity[i].time;
+         activity[i].index=i+1;
     }
 
     for (int i = 0; i < n; i++){
-        cin >> activity[i].end;
+        cin >> activity[i].deadline;
     }
 
     sort(activity.begin(), activity.end(), comp);
 
-    int lastEnd=-1;
+    int lasttimer=0;
     vector<int> act;
 
-    int i = 1;
     for (auto it : activity)
     {
-        if(it.start >=lastEnd){
-            lastEnd = it.end;
+        if(it.time+lasttimer <= it.deadline){
+            lasttimer = it.time+lasttimer;
             act.push_back(it.index);
         }
-        i++;
     }
 
     cout << "No. of non conflicting activities: " << act.size();
