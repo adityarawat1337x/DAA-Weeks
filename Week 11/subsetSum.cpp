@@ -2,7 +2,6 @@
 
 using namespace std;
 
-int dp[9999][9999];
 
 int ways(vector<int> &arr, int i, int N,vector<vector<int>> &dp)
 {
