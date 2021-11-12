@@ -32,14 +32,12 @@ int main()
     int lastEnd=-1;
     vector<int> act;
 
-    int i = 1;
     for (auto it : activity)
     {
         if(it.start >=lastEnd){
             lastEnd = it.end;
             act.push_back(it.index);
         }
-        i++;
     }
 
     cout << "No. of non conflicting activities: " << act.size();
